@@ -18,7 +18,7 @@ public class SimpleCalculatorTest {
 		assertEquals(calc.sub(5, 3), 2);
 	}
 	
-	/* Whoops jumped ahead a little bit
+	/* Whoops jumped ahead a little bit.
 	@Test
 	public void testMult() {
 		SimpleCalculator calc = new SimpleCalculator();
