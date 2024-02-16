@@ -22,14 +22,20 @@ public class SimpleCalculatorTest {
 	@Test
 	public void testMult() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.mult(1, 1), 2);
+		assertEquals(calc.mult(1, 1), 1);
 	}
 	
 	
 	@Test
 	public void testDiv() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.div(1, 1), 2);
+		assertEquals(calc.div(1, 1), 1);
+	}
+	
+	@Test(expected=java.lang.ArithmeticException.class)
+	public void testDivByZero() {
+		SimpleCalculator calc = new SimpleCalculator();
+		calc.div(1, 0);
 	}
 	
 }
